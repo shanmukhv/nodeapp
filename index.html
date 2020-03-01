@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<style>
+.lightOn{display:none;}
+</style>
+ <title>jquery</title>
+ <script src="js/jquery-1.12.4.js" ></script>
+ <script>
+    $(document).ready(function(){
+	  $('.lightOff').click(function(){
+        $('.lightOff').hide();
+		$('.lightOn').show();
+		$('body').css('background-color','black');
+      });
+	 }); 
+	  $(document).ready(function(){
+	  $('.lightOn').click(function(){
+        $('.lightOn').hide();
+		$('.lightOff').show();
+		$('body').css('background-color','yellow');
+      });
+	});
+ </script>
+</head>
+<body>
+<button class="lightOn">Turn Light On</button>
+<button class="lightOff">Turn Ligth Off</button>
+</body>
+<html>
